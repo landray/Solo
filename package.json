@@ -1,0 +1,31 @@
+{
+  "name": "solojs",
+  "version": "2.0.6",
+  "description": "A simple SPA engine based on vue",
+  "main": "solo.js",
+  "files": [
+    "solo.js",
+    "solo.css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landray/Solo.git"
+  },
+  "keywords": [
+    "Solo",
+    "SPA",
+    "SPA Engine",
+    "Vue"
+  ],
+  "author": "Landray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/landray/Solo/issues"
+  },
+  "homepage": "https://github.com/landray/Solo#readme",
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "updatedAt": 1488769021691
+}
