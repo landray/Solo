@@ -43,30 +43,18 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## Improvement
 1. iOS 下，设置了`-weblit-overflow-scrolling:touch;`的元素，即使它的上面存在着蒙层。当手指在蒙层上移动时，仍然会触发该元素的滚动
-2. 新增一个可配置的`list-item`组件
-3. 在iOS的safari浏览器下，后退按钮失效
+3. 在iOS的safari浏览器下，隐私模式下后退按钮失效
 4. vux的toast插件isShowMask失效不起作用
 
 ## 使用vue-echarts
 1. import vue-echarts 到入口文件
 2. 按需加载echarts的组件
 3. 注册vue-echarts为全局组件
-4. 在组件使用 `chart` 标签并同时组定options
-5. 懂得如何配置 `echarts` 和 使用 `vue-echarts` 的一些方法
+4. 在组件使用 `chart` 标签并同时指定options
 
-## Ideas
+## 使用vue-i18n
 
-1. 利用slot的作用域插槽去实现某些功能
-
-
-
-## Tasks
-
-- [x] Header,Footer 组件的封装
-
-header 的几个功能点
-
-1. ​
+1. 必须设置`lang` 和 `fallbackLang`
 
 ## 技术参考
 - [vue router](https://github.com/vuejs/vue-router)
