@@ -1,6 +1,6 @@
 {
   "name": "solojs",
-  "version": "2.0.18",
+  "version": "2.0.30",
   "description": "A simple SPA engine based on vue",
   "main": "solo.js",
   "files": [
@@ -23,9 +23,12 @@
     "url": "https://github.com/landray/Solo/issues"
   },
   "homepage": "https://github.com/landray/Solo#readme",
+  "dependencies": {
+    "vue": "^2.2.2"
+  },
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
-  "updatedAt": 1489051280225
+  "updatedAt": 1492999786721
 }
