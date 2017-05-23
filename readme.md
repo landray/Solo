@@ -1,5 +1,5 @@
 # solojs
-A simple SPA engine based on vue
+A simple SPA engine based on vue.js
 
 
 ## Install
