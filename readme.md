@@ -1,68 +1,38 @@
 # solojs
 A simple SPA engine based on vue.js
 
-
-## Install
-```sh
-npm install solojs --save
-```
-
 ## Get started
-```js
-import Vue from 'vue'
-import Solo from 'solojs'
-import 'solojs/solo.css'
-import VueResource from 'vue-resource'
-import Pages from './pages/pages'
 
-const FastClick = require('fastclick')
-FastClick.attach(document.body)
+```bash
+npm install vue-cli -g # if you haven't installed
+vue init landray/solo-boilerplate my-project # my-project is your project name
 
-Vue.use(VueResource)
-Vue.use(Solo)
-Solo.start({
-  pages: Pages,
-  enterPage: 'home'
-})
+cd my-project
+npm install
+npm run dev
 ```
 
 ## Dev build step
 
 ``` bash
-# install dependencies
-npm install
-
 # serve with hot reload at localhost:8080
 npm run dev
 
 # build for production with minification
 npm run build
+
+# build for production with minification & code splitting
+npm run buildx
+
+# build for production with minification & gzip
+npm run build-gzip
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-## Improvement
-1. iOS 下，设置了`-weblit-overflow-scrolling:touch;`的元素，即使它的上面存在着蒙层。当手指在蒙层上移动时，仍然会触发该元素的滚动
-3. 在iOS的safari浏览器下，隐私模式下后退按钮失效
-4. vux的toast插件isShowMask失效不起作用
 
-## 使用vue-echarts
-1. import vue-echarts 到入口文件
-2. 按需加载echarts的组件
-3. 注册vue-echarts为全局组件
-4. 在组件使用 `chart` 标签并同时指定options
 
-## 使用vue-i18n
-
-1. 必须设置`lang` 和 `fallbackLang`
-
-## 技术参考
-- [vue router](https://github.com/vuejs/vue-router)
-- [vue2-filters](https://github.com/freearhey/vue2-filters)
-- [mint-ui](https://github.com/elemefe/mint-ui/)
-- [Solo](./#)
-
-## 页面生命周期
+## Page lifecycle
 1. beforeCreate 页面创建之前，观察对象，初始化事件之前
 2. created 页面已创建，还未挂载到页面，$el 不可访问
 3. beforeMount 挂载到页面之前
