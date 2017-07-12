@@ -1,6 +1,6 @@
 {
   "name": "solojs",
-  "version": "2.0.55",
+  "version": "2.0.67",
   "description": "A simple SPA engine based on vue",
   "main": "solo.js",
   "files": [
@@ -30,5 +30,9 @@
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
-  "updatedAt": 1497345909535
+  "browserslist": [
+    "iOS >= 7",
+    "Android >= 4.0"
+  ],
+  "updatedAt": 1499421825123
 }
