@@ -26,6 +26,21 @@ npm install --registry=https://registry.npm.taobao.org
 npm run dev
 ```
 
+### NPM更新
+从 `https://github.com/landray/Solo` clone 至 与本项目平级的文件夹 `solo-github` 中, 再依次执行下述操作
+
+1. 编译
+```sh
+# 编译框架, 版本号会自动升级
+yarn run build 
+```
+2. 提交代码更新
+3. 更新github及npm, 操作前, 请确保有 github 及 npm 操作权限
+```sh
+# 给本代码库打tag, 更新GitHub, 并更新npm
+./publish2npm.sh
+```
+
 ### Documentation
 
 更多有关 `Solo` 的文档和示例，请访问：[Solo 在线文档](http://kk5.landray.com.cn:6789/solo/index.html) 进行查看
